@@ -52,6 +52,23 @@
 @media(max-width:1050px){.login-screen{grid-template-columns:minmax(0,1fr) minmax(400px,540px);gap:30px;padding:42px 36px}.login-card{padding:70px 30px 22px}.login-field{height:62px}.login-submit,.login-google{height:62px}}
 @media(max-width:760px){.login-screen{grid-template-columns:1fr;gap:18px;padding:48px 18px 28px;overflow-y:auto}.login-owl{width:min(74%,390px);margin-bottom:0}.brand-kicker{font-size:10px;letter-spacing:2px;gap:8px}.brand-kicker span{width:24px}.login-brand h1{font-size:38px;margin:5px 0 7px}.login-brand>p{font-size:14px}.brand-swoosh{margin-top:12px}.login-card{max-width:540px;margin:32px auto 0;border-radius:28px;padding:58px 22px 18px}.login-emblem{width:78px;height:78px;top:-31px;font-size:34px}.login-rule{margin-bottom:20px}.login-card h2{font-size:30px}.login-subtitle{font-size:15px;margin-bottom:22px}.login-field{height:56px;border-radius:16px;gap:14px;padding:0 15px}.login-field input{font-size:16px}.field-icon{font-size:23px}.login-submit,.login-google{height:56px;border-radius:16px;font-size:16px}.login-forgot{height:52px;border-radius:16px;font-size:15px}.login-card form{gap:12px}}
 
+
+/* Ajustes finais para corresponder à tela de referência */
+.login-screen{grid-template-columns:minmax(0,1fr) minmax(460px,700px);gap:clamp(32px,5vw,88px);padding:42px clamp(36px,5.5vw,100px);background:radial-gradient(ellipse at 18% 52%,#063b85 0%,#031b49 47%,#001538 100%)}
+.login-screen:before{inset:-34% -12% auto -12%;height:390px;border-width:28px 0;transform:rotate(-14deg);box-shadow:0 17px 0 -5px #eaf6ff,0 36px 0 -14px #0b57b7}
+.login-screen:after{right:-15%;bottom:-47%;width:92%;height:72%;border-width:26px;transform:rotate(-13deg);box-shadow:0 -18px 0 -8px #1679e8,0 -40px 0 -19px #092f70}
+.login-brand{max-width:720px;justify-self:center;width:100%}
+.login-owl{width:min(100%,620px);max-height:390px;object-fit:contain}
+.login-card{width:100%;max-width:700px;min-height:665px;padding:76px 46px 22px;border-radius:42px}
+.login-emblem{width:104px;height:104px;top:-38px}
+.login-field{height:70px;border-radius:24px}
+.login-submit,.login-google{height:70px}
+.login-forgot{height:64px}
+.eye-icon{width:34px;height:38px;flex:0 0 34px;padding:0;border:0;background:transparent;color:#082d69;font-size:24px;border-radius:8px;box-shadow:none}
+.eye-icon:hover{background:#e7f1ff}
+.login-screen:focus-within .login-field:focus-within{border-color:#8dbdff;box-shadow:0 0 0 3px #7fb4f333}
+@media(max-width:1050px){.login-screen{gap:28px;padding:38px 28px}.login-card{min-height:0;padding:70px 30px 22px}}
+@media(max-width:760px){.login-screen{padding:44px 18px 28px}.login-card{min-height:0}}
 </style></head><body>
 <section id="login" class="login login-screen">
   <div class="login-brand">
@@ -62,13 +79,13 @@
     <div class="brand-swoosh"></div>
   </div>
   <div class="login-card">
-    <div class="login-emblem" aria-hidden="true">♟</div>
+    <div class="login-emblem" aria-hidden="true"><svg viewBox="0 0 64 64" width="58" height="58" fill="none"><path d="M13 38c-5-2-7-7-5-12 2-5 7-7 12-5 0-8 6-14 14-14s14 6 14 14c5-2 10 0 12 5 2 5 0 10-5 12v12H13V38Z" fill="white"/><path d="M18 43h28v7H18z" fill="#d9eaff"/><path d="M24 30c2-3 5-4 8-4s6 1 8 4" stroke="#0a3477" stroke-width="3" stroke-linecap="round"/></svg></div>
     <div class="login-rule"><span></span><span></span></div>
     <h2>Bem-vindo(a)!</h2>
     <p class="login-subtitle">Entre para gerenciar o estoque da escola.</p>
     <form id="loginForm">
       <label class="login-field"><span class="field-icon">✉</span><input id="email" type="email" placeholder="E-mail" autocomplete="username" required></label>
-      <label class="login-field"><span class="field-icon">🔒</span><input id="password" type="password" placeholder="Senha" autocomplete="current-password" required><span class="eye-icon">◉</span></label>
+      <label class="login-field"><span class="field-icon">🔒</span><input id="password" type="password" placeholder="Senha" autocomplete="current-password" required><button type="button" id="togglePassword" class="eye-icon" aria-label="Mostrar senha" title="Mostrar senha">◉</button></label>
       <button class="login-submit">➜ <span>Entrar com e-mail</span></button>
       <button type="button" id="googleLogin" class="login-google"><span class="google-g">G</span>Continuar com Google</button>
       <div class="login-or"><span></span>OU<span></span></div>
@@ -90,6 +107,7 @@ function msg(id,s){$(id).textContent=s||""}function csv(name,rows){let body=rows
 let enteringUserId=null,enteredUserId=null;
 async function start(){db.auth.onAuthStateChange((event,session)=>{if(event==="SIGNED_OUT"){enteredUserId=null;location.reload();return}if(session?.user){queueMicrotask(()=>enter(session.user).catch(err=>{console.error("Falha ao abrir sistema:",err);msg("loginMsg","Erro ao carregar o sistema: "+(err?.message||"erro desconhecido"))}))}});const {data,error}=await db.auth.getSession();if(error){msg("loginMsg","Não foi possível recuperar sua sessão: "+error.message);return}if(data.session?.user)await enter(data.session.user);else{const params=new URLSearchParams(location.search);const oauthError=params.get("error_description")||params.get("error");if(oauthError)msg("loginMsg","Falha na autenticação Google: "+oauthError)}}
 async function enter(u){if(enteredUserId===u.id&&!$("app").classList.contains("hidden"))return;if(enteringUserId===u.id)return;enteringUserId=u.id;try{user=u;const {data:p,error}=await db.from("profiles").select("*").eq("id",u.id).maybeSingle();if(error)throw new Error("Não foi possível consultar seu perfil: "+error.message);if(!p){msg("loginMsg","Sua conta Google foi autenticada, mas ainda não possui perfil autorizado na cantina. Peça ao administrador para cadastrar seu acesso.");return}profile=p;enteredUserId=u.id;$("login").classList.add("hidden");$("app").classList.remove("hidden");$("who").textContent=(p.full_name||u.email)+" · "+p.role;document.querySelectorAll(".admin").forEach(x=>x.classList.toggle("hidden",!["admin","administrador"].includes(String(p.role||"").toLowerCase())));await refresh()}finally{enteringUserId=null}}
+const passwordToggle=$("togglePassword");if(passwordToggle)passwordToggle.onclick=()=>{const field=$("password");const visible=field.type==="password";field.type=visible?"text":"password";passwordToggle.textContent=visible?"⊘":"◉";passwordToggle.setAttribute("aria-label",visible?"Ocultar senha":"Mostrar senha");passwordToggle.title=visible?"Ocultar senha":"Mostrar senha"};
 $("loginForm").onsubmit=async e=>{e.preventDefault();msg("loginMsg","Entrando...");let {error}=await db.auth.signInWithPassword({email:$("email").value,password:$("password").value});msg("loginMsg",error?.message||"")};$("logout").onclick=()=>db.auth.signOut();
 $("googleLogin").onclick=async()=>{const btn=$("googleLogin");btn.disabled=true;btn.textContent="Conectando ao Google...";msg("loginMsg","Preparando acesso seguro com Google...");try{const redirectTo=location.origin+location.pathname;const {data,error}=await db.auth.signInWithOAuth({provider:"google",options:{redirectTo,skipBrowserRedirect:true}});if(error)throw error;if(!data?.url)throw new Error("O Supabase não retornou o endereço de autenticação. Confira as configurações do provedor Google.");msg("loginMsg","Abrindo o Google...");location.assign(data.url)}catch(error){console.error("Falha no login Google:",error);msg("loginMsg","Não foi possível iniciar o login Google: "+(error?.message||"erro desconhecido"));btn.disabled=false;btn.textContent="🌐 Continuar com Google"}};
 $("forgot").onclick=async()=>{const email=$("email").value.trim();if(!email){msg("loginMsg","Informe seu e-mail para receber o link de redefinição.");return}msg("loginMsg","Enviando link...");const {error}=await db.auth.resetPasswordForEmail(email,{redirectTo:location.origin+location.pathname});msg("loginMsg",error?"Erro: "+error.message:"Se o e-mail estiver cadastrado, enviaremos um link para redefinir a senha.")};
