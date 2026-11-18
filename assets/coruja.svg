@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" role="img" aria-label="Coruja branca com asas abertas">
+<defs>
+ <linearGradient id="feather" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#dce9f8"/></linearGradient>
+ <radialGradient id="face"><stop stop-color="#fff"/><stop offset="1" stop-color="#d6e4f4"/></radialGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffd36b"/><stop offset="1" stop-color="#d58a25"/></linearGradient>
+</defs>
+<!-- broad feathered wings -->
+<path fill="url(#feather)" stroke="#c7d8ec" stroke-width="3" d="M177 133C139 111 88 65 13 27c8 29 23 53 47 72C39 84 23 79 5 76c19 31 43 53 73 65-23-7-42-7-62-2 30 28 65 43 104 44l57-17z"/>
+<path fill="url(#feather)" stroke="#c7d8ec" stroke-width="3" d="M243 133c38-22 89-68 164-106-8 29-23 53-47 72 21-15 37-20 55-23-19 31-43 53-73 65 23-7 42-7 62-2-30 28-65 43-104 44l-57-17z"/>
+<g fill="none" stroke="#b8cbe1" stroke-width="3" stroke-linecap="round">
+<path d="M34 51q40 48 103 77M51 91q38 34 91 50M80 125q31 19 65 25M386 51q-40 48-103 77M369 91q-38 34-91 50M340 125q-31 19-65 25"/>
+<path d="M25 105q36 33 86 42M395 105q-36 33-86 42"/>
+</g>
+<!-- body and ear tufts -->
+<path fill="url(#feather)" stroke="#c7d8ec" stroke-width="3" d="M150 103 126 43l56 31q28-17 56 0l56-31-24 60q21 31 17 79-7 79-81 101-74-22-81-101-4-48 25-79z"/>
+<!-- facial discs -->
+<path fill="url(#face)" stroke="#b7cbe1" stroke-width="3" d="M139 142q4-57 48-57 28 0 43 29 15-29 43-29 44 0 48 57 3 61-48 83-28 12-43-7-15 19-43 7-51-22-48-83z"/>
+<g fill="#f7fbff" stroke="#c5d5e8" stroke-width="3">
+<ellipse cx="183" cy="151" rx="35" ry="41"/><ellipse cx="237" cy="151" rx="35" ry="41"/>
+</g>
+<g fill="#d79a37"><circle cx="184" cy="151" r="22"/><circle cx="236" cy="151" r="22"/></g>
+<g fill="#172b43"><circle cx="184" cy="151" r="13"/><circle cx="236" cy="151" r="13"/></g>
+<g fill="#fff"><circle cx="179" cy="145" r="5"/><circle cx="231" cy="145" r="5"/></g>
+<path fill="url(#gold)" stroke="#bd7928" stroke-width="2" d="m210 164 17 21-17 19-17-19z"/>
+<!-- chest feathers -->
+<g fill="none" stroke="#c5d6e8" stroke-width="2.5" stroke-linecap="round">
+<path d="M172 215q12 13 24 7M224 222q12 6 24-7M166 235q15 13 29 8M225 243q14 5 29-8M182 257q12 7 21 4M217 261q9 3 21-4"/>
+</g>
+</svg>
