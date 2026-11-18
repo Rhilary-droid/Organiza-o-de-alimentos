@@ -1,16 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 675 881" role="img" aria-labelledby="t d">
-<title id="t">Coruja escolar Jardim Cumbica II</title><desc id="d">Coruja branca e azul com capelo, sobre fundo azul com faixas curvas, nome da escola e identificação da cantina.</desc>
-<defs><linearGradient id="bg" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#00183d"/><stop offset=".55" stop-color="#062e6b"/><stop offset="1" stop-color="#06448e"/></linearGradient><linearGradient id="seal" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#1477e5"/><stop offset="1" stop-color="#00316f"/></linearGradient><linearGradient id="white" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#dbeaff"/></linearGradient><path id="arc" d="M145 372 A195 195 0 0 1 535 372"/></defs>
-<rect width="675" height="881" fill="url(#bg)"/>
-<path d="M-60 225 C155 290 350 170 740 160 L740 238 C390 255 160 360 -60 290Z" fill="#0879ed"/><path d="M-60 249 C160 312 360 198 740 188 L740 211 C365 227 165 338 -60 271Z" fill="#f5faff"/><path d="M-60 269 C160 332 360 218 740 208 L740 246 C380 263 160 355 -60 296Z" fill="#0754b4"/>
-<g transform="translate(0,-135)">
-<circle cx="340" cy="515" r="229" fill="url(#seal)" stroke="#80c2ff" stroke-width="9"/><circle cx="340" cy="515" r="211" fill="none" stroke="#d9edff" stroke-width="3"/>
-<text fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="800"><textPath href="#arc" startOffset="50%" text-anchor="middle">E.E PEI JARDIM NOVA CUMBICA II</textPath></text>
-<path d="M244 402 L340 367 L438 402 L340 439Z" fill="#fff" stroke="#b8d9ff" stroke-width="7" stroke-linejoin="round"/><path d="M278 424 L340 447 L402 424 L402 462 Q340 488 278 462Z" fill="#fff" stroke="#b8d9ff" stroke-width="7" stroke-linejoin="round"/>
-<path d="M230 454 L207 393 L270 430 Q340 399 410 430 L473 393 L450 454" fill="url(#white)" stroke="#fff" stroke-width="8" stroke-linejoin="round"/><path d="M225 477 Q230 423 282 421 Q340 402 398 421 Q450 423 455 477 L444 555 Q430 619 340 664 Q250 619 236 555Z" fill="url(#white)" stroke="#0b57bd" stroke-width="13" stroke-linejoin="round"/>
-<ellipse cx="291" cy="512" rx="72" ry="79" fill="#fff" stroke="#0a55b5" stroke-width="9"/><ellipse cx="389" cy="512" rx="72" ry="79" fill="#fff" stroke="#0a55b5" stroke-width="9"/><ellipse cx="291" cy="512" rx="53" ry="58" fill="#062c68"/><ellipse cx="389" cy="512" rx="53" ry="58" fill="#062c68"/><ellipse cx="291" cy="512" rx="39" ry="43" fill="#fff"/><ellipse cx="389" cy="512" rx="39" ry="43" fill="#fff"/><circle cx="291" cy="512" r="26" fill="#0a64d2"/><circle cx="389" cy="512" r="26" fill="#0a64d2"/><circle cx="291" cy="512" r="14" fill="#041a42"/><circle cx="389" cy="512" r="14" fill="#041a42"/><circle cx="280" cy="496" r="10" fill="#fff"/><circle cx="378" cy="496" r="10" fill="#fff"/><path d="M340 548 L315 580 L340 611 L365 580Z" fill="#fff" stroke="#0a55b5" stroke-width="7" stroke-linejoin="round"/><path d="M284 617 Q340 646 396 617 Q378 658 340 674 Q302 658 284 617Z" fill="#fff" opacity=".92"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="t d">
+<title id="t">Coruja cozinheira da Cantina Jardim Cumbica II</title>
+<desc id="d">Mascote de coruja branca e azul, olhos azuis, asas abertas e chapéu de cozinheira branco.</desc>
+<defs>
+<linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#168cff"/><stop offset=".55" stop-color="#0750ae"/><stop offset="1" stop-color="#061a49"/></linearGradient>
+<linearGradient id="feather" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#c9dcf4"/></linearGradient>
+<radialGradient id="eye"><stop stop-color="#a7eaff"/><stop offset=".35" stop-color="#168bfa"/><stop offset="1" stop-color="#061a49"/></radialGradient>
+<filter id="sh"><feGaussianBlur stdDeviation="8"/></filter>
+</defs>
+<ellipse cx="360" cy="525" rx="215" ry="17" fill="#00102c" opacity=".3" filter="url(#sh)"/>
+<!-- asas abertas, penas em camadas -->
+<g stroke="#061b4d" stroke-width="13" stroke-linejoin="round">
+<path d="M290 270Q188 185 35 165q23 52 70 91-52-19-92-8 39 60 102 91-41-5-77 14 72 65 170 67z" fill="url(#navy)"/>
+<path d="M430 270q102-85 255-105-23 52-70 91 52-19 92-8-39 60-102 91 41-5 77 14-72 65-170 67z" fill="url(#navy)"/>
 </g>
-<path d="M50 590 H125 M550 590 H625" stroke="#91caff" stroke-width="3"/><text x="337.5" y="598" text-anchor="middle" fill="#e9f4ff" font-family="Arial,Helvetica,sans-serif" font-size="22" letter-spacing="6">GESTÃO DE MERENDA ESCOLAR</text>
-<text x="337.5" y="690" text-anchor="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="76" font-weight="850" letter-spacing="-2">Jardim</text><text x="337.5" y="775" text-anchor="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="76" font-weight="850" letter-spacing="-3">Cumbica II</text>
-<text x="337.5" y="830" text-anchor="middle" fill="#e3efff" font-family="Arial,Helvetica,sans-serif" font-size="25" font-style="italic">Cantina E.E PEI Jardim Nova Cumbica II</text>
+<g fill="url(#feather)" stroke="#0a3474" stroke-width="8" stroke-linejoin="round">
+<path d="M83 226q-24-29-39-59 62 21 117 72-43-17-76-8 53 19 92 57-48-13-84 3 55 21 90 58-56-9-91 16 66 9 115 45-93 1-156-52 22-13 48-17-55-23-88-62 32-5 63 5-47-30-70-70 42 0 79 12z"/>
+<path d="M637 226q24-29 39-59-62 21-117 72 43-17 76-8-53 19-92 57 48-13 84 3-55 21-90 58 56-9 91 16-66 9-115 45 93 1 156-52-22-13-48-17 55-23 88-62-32-5-63 5 47-30 70-70-42 0-79 12z"/>
+</g>
+<g fill="none" stroke="#168bfa" stroke-width="12" stroke-linecap="round"><path d="M95 279q67 17 116 66M124 330q50 8 90 39M625 279q-67 17-116 66M596 330q-50 8-90 39"/></g>
+<!-- corpo e cabeça -->
+<path d="M244 220 211 132l84 47q65-38 130 0l84-47-33 88q30 51 19 125-17 119-135 170-118-51-135-170-11-74 19-125z" fill="url(#feather)" stroke="#061b4d" stroke-width="15" stroke-linejoin="round"/>
+<path d="M267 224q39-48 93-30m93 30q-39-48-93-30" fill="none" stroke="#0752b9" stroke-width="22" stroke-linecap="round"/>
+<!-- discos faciais -->
+<ellipse cx="300" cy="310" rx="69" ry="81" fill="#fff" stroke="#d4e7ff" stroke-width="8"/>
+<ellipse cx="420" cy="310" rx="69" ry="81" fill="#fff" stroke="#d4e7ff" stroke-width="8"/>
+<ellipse cx="300" cy="310" rx="52" ry="62" fill="#061b4d"/>
+<ellipse cx="420" cy="310" rx="52" ry="62" fill="#061b4d"/>
+<ellipse cx="300" cy="310" rx="41" ry="49" fill="url(#eye)"/>
+<ellipse cx="420" cy="310" rx="41" ry="49" fill="url(#eye)"/>
+<ellipse cx="300" cy="313" rx="21" ry="29" fill="#031634"/>
+<ellipse cx="420" cy="313" rx="21" ry="29" fill="#031634"/>
+<circle cx="286" cy="289" r="12" fill="#fff"/><circle cx="406" cy="289" r="12" fill="#fff"/>
+<!-- bico -->
+<path d="M360 340 329 382l31 43 31-43z" fill="url(#navy)" stroke="#061b4d" stroke-width="9" stroke-linejoin="round"/>
+<!-- peito e patas -->
+<path d="M295 418q65 42 130 0-17 67-65 91-48-24-65-91z" fill="#fff" stroke="#c5d9f3" stroke-width="6"/>
+<g fill="url(#feather)" stroke="#061b4d" stroke-width="8"><path d="M309 482q-28 19-20 42 10 16 25 0l9-13q-1 20 15 19 15-3 9-27l-7-21z"/><path d="M411 482q28 19 20 42-10 16-25 0l-9-13q1 20-15 19-15-3-9-27l7-21z"/></g>
+<!-- chapéu de cozinheira branco, alto e arredondado -->
+<g stroke="#08275d" stroke-width="9" stroke-linejoin="round">
+<path d="M275 166q-31-9-26-40 4-25 31-27 1-45 38-58 20-8 42 1 22-9 42-1 37 13 38 58 27 2 31 27 5 31-26 40l-3 30q-83 26-164 0z" fill="url(#feather)"/>
+<path d="M309 145q-11-55 18-94M360 142V38M411 145q11-55-18-94" fill="none" stroke="#b7cdeb" stroke-width="8" stroke-linecap="round"/>
+<path d="M278 157q82 24 164 0v36q-82 27-164 0z" fill="#fff"/>
+</g>
+<path d="M307 181q53 16 106 0" fill="none" stroke="#c8dcf6" stroke-width="6" stroke-linecap="round"/>
 </svg>
