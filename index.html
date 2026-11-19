@@ -419,6 +419,14 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
 @media(max-width:1100px){#dashboard .stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){#dashboard .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}#dashboard .stats .stat{grid-template-columns:42px minmax(0,1fr);column-gap:9px;min-height:96px;padding:12px 10px}#dashboard .stats .stat:before{width:40px;height:40px;font-size:22px}#dashboard .stats .stat span{font-size:11px;line-height:1.25}#dashboard .stats .stat strong{font-size:26px}}
 @media(max-width:380px){#dashboard .stats{grid-template-columns:1fr}#dashboard .stats .stat{grid-template-columns:48px minmax(0,1fr);min-height:84px;padding:12px 14px}#dashboard .stats .stat:before{width:44px;height:44px}}
+
+/* Logo da escola ampliado no painel principal */
+#app .sidebar .side-brand{padding-top:8px;padding-bottom:24px;gap:5px}
+#app .sidebar .side-logo{width:116px;height:116px;border-radius:28px;padding:4px;margin-bottom:14px;box-shadow:0 10px 25px #00173d55}
+#app .sidebar .side-logo img{width:100%;height:100%;object-fit:contain;display:block}
+#app .sidebar .side-brand b{font-size:18px;line-height:1.2}
+#app .sidebar .side-brand small{font-size:12px;line-height:1.35}
+@media(max-width:760px){#app .sidebar .side-brand{padding:0 0 8px;gap:9px}#app .sidebar .side-logo{width:58px;height:58px;flex:0 0 58px;border-radius:17px;padding:3px;margin:0}#app .sidebar .side-brand b{font-size:15px}#app .sidebar .side-brand small{display:block;font-size:11px}}
 </style></head><body>
 <section id="login" class="login login-screen">
   <div class="login-brand">
