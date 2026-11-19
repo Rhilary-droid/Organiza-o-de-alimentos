@@ -308,6 +308,106 @@ html,body{color-scheme:only light!important;background:#f6faff!important}
 #login.login-screen .login-or span{background:#dceafa!important}
 #login.login-screen .login-msg{color:#b54747!important}
 @media(max-width:680px){#login.login-screen{background:linear-gradient(180deg,#edf6ff 0%,#f8fbff 45%,#ffffff 100%)!important;padding:22px 16px!important}#login.login-screen .login-card{background:#fff!important}}
+
+/* REDESIGN RESPONSIVO: desktop, tablet e mobile */
+@media(min-width:761px){.top-nav{display:none!important}}
+.side-logo{width:92px;height:92px;border-radius:22px;padding:7px;background:#fff;border:2px solid #d8e9ff;box-shadow:0 6px 18px rgba(0,20,65,.18)}
+.side-logo img{object-fit:contain;display:block}
+.hero-header{padding-left:clamp(22px,3vw,52px);padding-right:clamp(20px,3vw,42px)}
+.hero-copy{gap:3px}
+.hero-copy span{font-size:clamp(13px,1vw,16px);letter-spacing:1.5px;text-transform:uppercase}
+.hero-copy b{letter-spacing:-.5px}
+.hero-user{min-width:0;max-width:45%;justify-content:flex-end}
+.hero-user #who{overflow-wrap:anywhere;text-align:right}
+.stat{padding-left:112px;min-height:132px}
+.stat:before{left:17px;width:76px;height:76px;font-size:34px}
+.stat:after{left:105px}
+.dashboard-tables .panel{min-width:0}
+.dashboard-tables table{table-layout:auto}
+.dashboard-tables th,.dashboard-tables td{overflow-wrap:anywhere}
+button,input,select{min-height:42px}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #72b4ff;outline-offset:2px}
+@media(max-width:1200px) and (min-width:761px){
+ #app{grid-template-columns:180px minmax(0,1fr);grid-template-rows:160px minmax(calc(100vh - 160px),auto)}
+ .sidebar{padding:20px 10px}
+ .side-logo{width:72px;height:72px}
+ .side-nav button{padding:11px 9px;font-size:13px}
+ .hero-header{padding:20px 24px}
+ .hero-copy b{font-size:clamp(28px,3vw,40px)}
+ .layout{padding:22px 24px 72px}
+ .top-nav{display:flex!important;gap:7px;overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px}
+ .top-nav button{white-space:nowrap;padding:11px 13px;font-size:14px}
+ .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .dashboard-tables{grid-template-columns:1fr}
+}
+@media(max-width:1023px) and (min-width:761px){
+ #app{grid-template-columns:76px minmax(0,1fr)}
+ .sidebar{padding:14px 7px}
+ .side-brand{padding-bottom:12px}
+ .side-logo{width:56px;height:56px;border-radius:15px;padding:4px;margin-bottom:7px}
+ .side-brand b,.side-brand small,.side-footer{display:none}
+ .side-nav{gap:6px;margin-top:14px}
+ .side-nav button{justify-content:center;padding:10px 4px;font-size:0;gap:0}
+ .side-nav button span{width:34px;height:34px;font-size:20px}
+ .hero-header{min-height:150px}
+ .layout{padding:20px 18px 65px}
+}
+@media(max-width:760px){
+ #app{display:flex;flex-direction:column;min-height:100vh}
+ .sidebar{position:relative;width:100%;padding:10px 12px 8px;border-right:0;border-bottom:1px solid #1e70c5}
+ .side-brand{flex-direction:row;justify-content:flex-start;text-align:left;gap:10px;padding:0 0 9px;border-bottom:0}
+ .side-logo{width:46px;height:46px;border-radius:12px;padding:3px;margin:0}
+ .side-brand b{font-size:15px}
+ .side-brand small{display:block;font-size:11px;margin:0}
+ .side-nav{display:none}
+ .side-footer{display:none}
+ .hero-header{min-height:108px;padding:14px 16px;align-items:center}
+ .hero-copy span{font-size:11px;letter-spacing:.8px}
+ .hero-copy b{font-size:clamp(22px,6vw,30px)}
+ .hero-copy i{font-size:12px;border-top:0;padding-top:0}
+ .hero-user{max-width:48%;font-size:11px}
+ .hero-user .secondary{padding:8px 11px;min-height:36px}
+ .layout{width:100%;padding:15px 12px 34px;border-radius:18px 18px 0 0;overflow:visible}
+ .top-nav{display:flex!important;overflow-x:auto;flex-wrap:nowrap;gap:6px;margin:0 0 16px;padding:2px 0 8px;scrollbar-width:thin}
+ .top-nav button{flex:0 0 auto;padding:10px 12px;font-size:12px;gap:6px}
+ .top-nav button span{font-size:16px}
+ #dashboard>.toolbar{align-items:flex-start}
+ #dashboard>.toolbar h2{font-size:23px}
+ #dashboard>.toolbar .muted{font-size:13px}
+ #dashboard>.toolbar .actions{width:100%;display:grid;grid-template-columns:1fr 1fr}
+ #dashboard>.toolbar .actions button{font-size:13px;padding:10px;min-height:44px}
+ .stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:14px 0}
+ .stat{min-height:100px;padding:12px 8px 12px 65px;border-radius:14px}
+ .stat:before{left:8px;top:20px;width:48px;height:48px;font-size:23px}
+ .stat:after{left:61px;top:16px;bottom:16px}
+ .stat span{font-size:11px;line-height:1.3}
+ .stat strong{font-size:25px}
+ .dashboard-tables{grid-template-columns:1fr;gap:12px}
+ .dashboard-tables>.panel{border-radius:15px}
+ .dashboard-tables>.panel>h3,.dashboard-tables>.panel>.toolbar{padding:12px 14px;min-height:48px}
+ .dashboard-tables>.panel>h3,.dashboard-tables>.panel>.toolbar h3{font-size:16px}
+ .dashboard-tables table{min-width:560px;margin-left:10px;margin-right:10px;width:calc(100% - 20px)}
+ .dashboard-tables th,.dashboard-tables td{font-size:12px;padding:9px 7px}
+ .panel{padding:13px;border-radius:14px}
+ .toolbar,.actions{gap:8px}
+ .toolbar button,.actions button{max-width:100%}
+ .grid{grid-template-columns:1fr}
+ .modal{padding:10px}
+ .modal .card{padding:18px;width:100%;max-height:calc(100dvh - 20px)}
+ #batches table,#suppliers table,#waste table,#reports table{min-width:650px}
+ .foot{padding:16px 8px}
+}
+@media(max-width:390px){
+ .side-brand b{font-size:14px}
+ .hero-user #who{display:none}
+ .stats{gap:7px}
+ .stat{padding-left:60px}
+ .stat:before{left:7px;width:44px;height:44px}
+ .stat:after{left:55px}
+ .top-nav button{padding:9px 10px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
 </style></head><body>
 <section id="login" class="login login-screen">
   <div class="login-brand">
