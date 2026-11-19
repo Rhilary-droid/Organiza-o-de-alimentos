@@ -1,46 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" role="img" aria-labelledby="t d">
-<title id="t">Coruja cozinheira da Cantina Jardim Cumbica II</title>
-<desc id="d">Mascote de coruja branca e azul, olhos azuis, asas abertas e chapéu de cozinheira branco.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" role="img" aria-labelledby="title desc">
+<title id="title">Emblema E.E. PEI Jardim Nova Cumbica II</title>
+<desc id="desc">Logo uniforme: nome da escola em arco, coruja geométrica com olhos grandes e capelo escolar, em azul, branco e azul-marinho.</desc>
 <defs>
-<linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#168cff"/><stop offset=".55" stop-color="#0750ae"/><stop offset="1" stop-color="#061a49"/></linearGradient>
-<linearGradient id="feather" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#c9dcf4"/></linearGradient>
-<radialGradient id="eye"><stop stop-color="#a7eaff"/><stop offset=".35" stop-color="#168bfa"/><stop offset="1" stop-color="#061a49"/></radialGradient>
-<filter id="sh"><feGaussianBlur stdDeviation="8"/></filter>
+ <path id="schoolArc" d="M105 390 A250 250 0 0 1 595 390"/>
+ <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#1677e8"/><stop offset="1" stop-color="#073575"/></linearGradient>
 </defs>
-<ellipse cx="360" cy="525" rx="215" ry="17" fill="#00102c" opacity=".3" filter="url(#sh)"/>
-<!-- asas abertas, penas em camadas -->
-<g stroke="#061b4d" stroke-width="13" stroke-linejoin="round">
-<path d="M290 270Q188 185 35 165q23 52 70 91-52-19-92-8 39 60 102 91-41-5-77 14 72 65 170 67z" fill="url(#navy)"/>
-<path d="M430 270q102-85 255-105-23 52-70 91 52-19 92-8-39 60-102 91 41-5 77 14-72 65-170 67z" fill="url(#navy)"/>
-</g>
-<g fill="url(#feather)" stroke="#0a3474" stroke-width="8" stroke-linejoin="round">
-<path d="M83 226q-24-29-39-59 62 21 117 72-43-17-76-8 53 19 92 57-48-13-84 3 55 21 90 58-56-9-91 16 66 9 115 45-93 1-156-52 22-13 48-17-55-23-88-62 32-5 63 5-47-30-70-70 42 0 79 12z"/>
-<path d="M637 226q24-29 39-59-62 21-117 72 43-17 76-8-53 19-92 57 48-13 84 3-55 21-90 58 56-9 91 16-66 9-115 45 93 1 156-52-22-13-48-17 55-23 88-62-32-5-63 5 47-30 70-70-42 0-79 12z"/>
-</g>
-<g fill="none" stroke="#168bfa" stroke-width="12" stroke-linecap="round"><path d="M95 279q67 17 116 66M124 330q50 8 90 39M625 279q-67 17-116 66M596 330q-50 8-90 39"/></g>
-<!-- corpo e cabeça -->
-<path d="M244 220 211 132l84 47q65-38 130 0l84-47-33 88q30 51 19 125-17 119-135 170-118-51-135-170-11-74 19-125z" fill="url(#feather)" stroke="#061b4d" stroke-width="15" stroke-linejoin="round"/>
-<path d="M267 224q39-48 93-30m93 30q-39-48-93-30" fill="none" stroke="#0752b9" stroke-width="22" stroke-linecap="round"/>
-<!-- discos faciais -->
-<ellipse cx="300" cy="310" rx="69" ry="81" fill="#fff" stroke="#d4e7ff" stroke-width="8"/>
-<ellipse cx="420" cy="310" rx="69" ry="81" fill="#fff" stroke="#d4e7ff" stroke-width="8"/>
-<ellipse cx="300" cy="310" rx="52" ry="62" fill="#061b4d"/>
-<ellipse cx="420" cy="310" rx="52" ry="62" fill="#061b4d"/>
-<ellipse cx="300" cy="310" rx="41" ry="49" fill="url(#eye)"/>
-<ellipse cx="420" cy="310" rx="41" ry="49" fill="url(#eye)"/>
-<ellipse cx="300" cy="313" rx="21" ry="29" fill="#031634"/>
-<ellipse cx="420" cy="313" rx="21" ry="29" fill="#031634"/>
-<circle cx="286" cy="289" r="12" fill="#fff"/><circle cx="406" cy="289" r="12" fill="#fff"/>
-<!-- bico -->
-<path d="M360 340 329 382l31 43 31-43z" fill="url(#navy)" stroke="#061b4d" stroke-width="9" stroke-linejoin="round"/>
-<!-- peito e patas -->
-<path d="M295 418q65 42 130 0-17 67-65 91-48-24-65-91z" fill="#fff" stroke="#c5d9f3" stroke-width="6"/>
-<g fill="url(#feather)" stroke="#061b4d" stroke-width="8"><path d="M309 482q-28 19-20 42 10 16 25 0l9-13q-1 20 15 19 15-3 9-27l-7-21z"/><path d="M411 482q28 19 20 42-10 16-25 0l-9-13q1 20-15 19-15-3-9-27l7-21z"/></g>
-<!-- chapéu de cozinheira branco, alto e arredondado -->
-<g stroke="#08275d" stroke-width="9" stroke-linejoin="round">
-<path d="M275 166q-31-9-26-40 4-25 31-27 1-45 38-58 20-8 42 1 22-9 42-1 37 13 38 58 27 2 31 27 5 31-26 40l-3 30q-83 26-164 0z" fill="url(#feather)"/>
-<path d="M309 145q-11-55 18-94M360 142V38M411 145q11-55-18-94" fill="none" stroke="#b7cdeb" stroke-width="8" stroke-linecap="round"/>
-<path d="M278 157q82 24 164 0v36q-82 27-164 0z" fill="#fff"/>
-</g>
-<path d="M307 181q53 16 106 0" fill="none" stroke="#c8dcf6" stroke-width="6" stroke-linecap="round"/>
+<!-- lettering follows the original reference arc -->
+<text fill="#fff" stroke="#0a2c64" stroke-width="3" paint-order="stroke" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="48" letter-spacing="-1">
+ <textPath href="#schoolArc" startOffset="50%" text-anchor="middle">E.E. PEI JARDIM NOVA CUMBICA II</textPath>
+</text>
+<!-- Graduation cap -->
+<path d="M190 290 350 235 510 290 350 345Z" fill="#fff" stroke="#0b3f89" stroke-width="13" stroke-linejoin="round"/>
+<path d="M245 323 350 360 455 323 455 385Q350 420 245 385Z" fill="url(#blue)" stroke="#fff" stroke-width="10" stroke-linejoin="round"/>
+<!-- owl brow / silhouette -->
+<path d="M135 350Q215 460 275 420Q350 395 425 420Q485 460 565 350Q535 455 490 500Q530 565 470 620Q405 665 350 610Q295 665 230 620Q170 565 210 500Q165 455 135 350Z" fill="#fff" stroke="#0b3f89" stroke-width="15" stroke-linejoin="round"/>
+<!-- eyes -->
+<circle cx="270" cy="515" r="112" fill="url(#blue)" stroke="#0b3f89" stroke-width="12"/>
+<circle cx="430" cy="515" r="112" fill="url(#blue)" stroke="#0b3f89" stroke-width="12"/>
+<circle cx="270" cy="515" r="82" fill="#fff"/>
+<circle cx="430" cy="515" r="82" fill="#fff"/>
+<circle cx="270" cy="515" r="46" fill="#0b2b5f"/>
+<circle cx="430" cy="515" r="46" fill="#0b2b5f"/>
+<circle cx="252" cy="492" r="15" fill="#fff"/><circle cx="412" cy="492" r="15" fill="#fff"/>
+<!-- beak -->
+<path d="M350 615 310 660 350 695 390 660Z" fill="#0b3f89" stroke="#fff" stroke-width="8" stroke-linejoin="round"/>
 </svg>
