@@ -569,7 +569,9 @@ start();if("serviceWorker"in navigator)window.addEventListener("load",()=>naviga
 #login.login-screen .login-brand h1,
 #login.login-screen .login-brand>p{color:#000!important}
 
-/* Painel: exibir o mesmo arquivo original da tela de login, sem moldura ou efeitos */
+/* Painel: mesmo arquivo original da tela de login; apenas reposicionado */
+#app .sidebar{padding-top:12px!important}
+#app .sidebar .side-brand{padding-top:0!important}
 #app .sidebar .side-logo{
   width:148px!important;height:148px!important;flex:0 0 148px!important;
   background:#fff!important;border:0!important;border-radius:50%!important;
