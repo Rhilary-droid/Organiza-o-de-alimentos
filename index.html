@@ -572,14 +572,14 @@ start();if("serviceWorker"in navigator)window.addEventListener("load",()=>naviga
 /* Painel: exibir o mesmo arquivo original da tela de login, sem moldura ou efeitos */
 #app .sidebar .side-logo{
   width:148px!important;height:148px!important;flex:0 0 148px!important;
-  background:transparent!important;border:0!important;border-radius:0!important;
-  padding:0!important;box-shadow:none!important;overflow:visible!important;
+  background:#fff!important;border:0!important;border-radius:50%!important;
+  padding:0!important;box-shadow:none!important;overflow:hidden!important;
   margin:0 auto 14px!important;
 }
 #app .sidebar .side-logo img{
   display:block!important;width:100%!important;height:100%!important;
-  object-fit:contain!important;object-position:center!important;
-  border:0!important;border-radius:0!important;padding:0!important;
+  object-fit:cover!important;object-position:center!important;
+  border:0!important;border-radius:50%!important;padding:0!important;
   box-shadow:none!important;filter:none!important;mix-blend-mode:normal!important;
 }
 @media(max-width:900px){
