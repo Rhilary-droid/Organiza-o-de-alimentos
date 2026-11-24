@@ -568,4 +568,24 @@ start();if("serviceWorker"in navigator)window.addEventListener("load",()=>naviga
 #login.login-screen .login-brand .brand-kicker,
 #login.login-screen .login-brand h1,
 #login.login-screen .login-brand>p{color:#000!important}
+
+/* Painel: exibir o mesmo arquivo original da tela de login, sem moldura ou efeitos */
+#app .sidebar .side-logo{
+  width:148px!important;height:148px!important;flex:0 0 148px!important;
+  background:transparent!important;border:0!important;border-radius:0!important;
+  padding:0!important;box-shadow:none!important;overflow:visible!important;
+  margin:0 auto 14px!important;
+}
+#app .sidebar .side-logo img{
+  display:block!important;width:100%!important;height:100%!important;
+  object-fit:contain!important;object-position:center!important;
+  border:0!important;border-radius:0!important;padding:0!important;
+  box-shadow:none!important;filter:none!important;mix-blend-mode:normal!important;
+}
+@media(max-width:900px){
+  #app .sidebar .side-logo{width:112px!important;height:112px!important;flex-basis:112px!important}
+}
+@media(max-width:600px){
+  #app .sidebar .side-logo{width:82px!important;height:82px!important;flex-basis:82px!important}
+}
 </style>
