@@ -1,4 +1,4 @@
-const CACHE="merenda-jcii-v44";
+const CACHE="merenda-jcii-v45";
 self.addEventListener("install",e=>e.waitUntil((async()=>{const c=await caches.open(CACHE);await c.addAll(["./","./index.html","./manifest.webmanifest","./assets/coruja.svg","./assets/emblema-escolar.svg"]);await self.skipWaiting()})()));
 self.addEventListener("activate",e=>e.waitUntil((async()=>{const keys=await caches.keys();await Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)));await self.clients.claim()})()));
 self.addEventListener("fetch",e=>{if(e.request.method!=="GET"||new URL(e.request.url).origin!==location.origin)return;const isPage=e.request.mode==="navigate"||new URL(e.request.url).pathname.endsWith("/index.html")||new URL(e.request.url).pathname.endsWith("/");if(isPage){e.respondWith((async()=>{try{const fresh=await fetch(e.request,{cache:"no-store"});if(fresh.ok){const c=await caches.open(CACHE);c.put(e.request,fresh.clone())}return fresh}catch(err){const cached=await caches.match(e.request);if(cached)return cached;throw err}})());return}e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)))});
